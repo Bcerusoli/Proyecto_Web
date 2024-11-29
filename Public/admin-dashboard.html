@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="css/administradorVista.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Panel de Administración</h1>
+        <button id="logout-button" class="btn logout">Cerrar Sesión</button>
+    </header>
+
+    <main>
+
+        
+        <section id="product-list-section">
+            <h2>Listado de Productos</h2>
+            <table id="product-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="product-table-body">
+                    
+                </tbody>
+            </table>
+            <div id="list-error" class="error-message"></div>
+        </section>
+
+        
+        <section id="orders-list-section" class="hidden">
+            <h2>Listado de Órdenes</h2>
+            <table id="orders-table">
+                <thead>
+                    <tr>
+                        <th>ID Orden</th>
+                        <th>Fecha</th>
+                        <th>Cliente</th>
+                        <th>Email</th>
+                        <th>Total</th>
+                        <th>Productos</th>
+                    </tr>
+                </thead>
+                <tbody id="orders-table-body">
+                    
+                </tbody>
+            </table>
+            <div id="orders-list-error" class="error-message"></div>
+        </section>
+
+        <section class="actions">
+            <button id="create-product-button" class="btn primary">Crear Producto</button>
+            
+            <button id="view-orders-button" class="btn secondary">Ver Órdenes</button>
+        </section>
+
+        
+        <section id="create-product-form" class="form-section hidden">
+            <h2>Nuevo Producto</h2>
+            <form id="product-form">
+                
+                <div class="form-group">
+                    <label for="product-name">Nombre:</label>
+                    <input type="text" id="product-name" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Descripción:</label>
+                    <textarea id="product-description" name="descripcion" placeholder="Descripción" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Precio:</label>
+                    <input type="number" id="product-price" name="precio" placeholder="Precio" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-stock">Stock:</label>
+                    <input type="number" id="product-stock" name="stock" placeholder="Stock" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-image">URL de la imagen:</label>
+                    <input type="text" id="product-image" name="imagen" placeholder="URL de la imagen">
+                </div>
+
+             
+                <div class="form-group">
+                    <label for="product-subcategoria-marca">Subcategoría Marca:</label>
+                    <select id="product-subcategoria-marca" name="id_subcategoria_marca" required>
+                        <option value="">Selecciona una subcategoría marca</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="product-subcategoria-perfume">Subcategoría Perfume:</label>
+                    <select id="product-subcategoria-perfume" name="id_subcategoria_perfume" required>
+                        <option value="">Selecciona una subcategoría perfume</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn success">Guardar</button>
+                    <button type="button" id="cancel-button" class="btn secondary">Cancelar</button>
+                </div>
+            </form>
+            <div id="form-error" class="error-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tienda de Perfumes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script type="module" src="js/admin-dashboard.js"></script>
+</body>
+</html>

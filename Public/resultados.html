@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados de Búsqueda</title>
+    <link rel="stylesheet" href="css/resultado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="imagenes/logo.png" alt="Logo de Perfumeria Cerusoli" class="logo-img">
+            </a>
+            <h1>Perfumeria Cerusoli</h1>
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="menu">
+                
+                <li class="listaMarca">
+                    <a href="#">Marcas</a>
+                    <div class="listaMarca-contenido">
+                        <div class="listaMarca-columna">
+                            <div class="column">
+                                <h3>A - C</h3>
+                                <ul>
+                                    <li>Agatha Ruiz de la Prada</li>
+                                    <li>Adolfo Domínguez</li>
+                                    <li>Azzaro</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h3>D - K</h3>
+                                <ul>
+                                    <li>Diesel</li>
+                                    <li>DIOR</li>
+                                    <li>Dolce&Gabbana</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h3>L - O</h3>
+                                <ul>
+                                    <li>Lacoste</li>
+                                    <li>Lancôme</li>
+                                    <li>Mercedes Benz</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h3>P - Z</h3>
+                                <ul>
+                                    <li>Paris Hilton</li>
+                                    <li>Prada</li>
+                                    <li>TOM FORD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Perfumes</a>
+                    <div class="dropdown-content">
+                        <a href="catalogo.html?subcategoria=Hombre">Hombre</a>
+                        <a href="catalogo.html?subcategoria=Mujer">Mujer</a>
+                        <a href="catalogo.html">Todos</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Instrucciones</a>
+                    <div class="dropdown-content">
+                        <a href="#">1. Selecciona tu producto.</a>
+                        <a href="#">2. Añádelo al carrito.</a>
+                        <a href="#">3. Procede al pago.</a>
+                        <a href="#">4. Recibe tu pedido en casa.</a>
+                    </div>
+                </li>
+                <li>
+                    <input type="text" id="search-bar" placeholder="Buscar perfumes...">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </li>
+                <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+                <li>
+                    <a href="carrito.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+                <li><button id="btn-cerrar-sesion">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Resultados de Búsqueda</h1>
+        <div class="resultados-contenedor">
+            >
+        </div>
+    </main>
+
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tienda de Perfumes. Todos los derechos reservados.</p>
+            
+            <div class="footer-sections">
+                <div class="social-icons">
+                    <h3>Síguenos</h3>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+                
+                <div class="payment-methods">
+                    <h3>Formas de pago</h3>
+                    <a href="#"><i class="fab fa-cc-visa"></i></a>
+                    <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                    <a href="#"><i class="fab fa-cc-paypal"></i></a>
+                </div>
+                
+                <div class="contact-section">
+                    <h3>Contáctanos</h3>
+                    <a href="contacto.html" class="contact-link">PerfCerusoli@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/resultados.js"></script>
+</body>
+</html>
